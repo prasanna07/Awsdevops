@@ -1,0 +1,69 @@
+git init   .................For initialize the github
+
+git config --global user.name "name"              .................to create  user name config id when started github at the first time
+ 
+git config --global user.email "email"           .................. to create user email config id when started github at the first time.
+
+git config --list                    ................display the user config details.
+
+touch file1                        ...............to create the touch file with the name of file1
+ls                                 ...............display the list
+git status                         ...............it display the status of the files.
+git add file1                      ...............going to change into staging stage(green color indication)
+git status                         ...............it display the status of the files.
+git commit -m "label" file1        ...............going to change into local reporsitory 
+git status                         ...............it should display working tree clean
+git log                            ...............display the log of the files
+git show cid                       ...............display the details of the file like author,date,text message ....etc
+
+----------------------
+
+touch file3 file4 file5           ...............created multiple new files withn the name of file3 4 5
+ls                                ..............list display
+git status                        ..............display the status of the files
+git add file3 file4 file5         .............. multiple files convert from workspace to staging/index area
+or                           
+git add .                                        "
+or
+git add *                                        "
+or
+git add -A                                       "
+git status                        ..............display the status of the all files
+git commit -m "label"            ...............multiple files convert from staging to local reposritory with text message label
+git status                       ...............display multiple files status
+git log                          ...............display the logs of all files
+git show cid                     ...............display the details of the file
+
+git diff file-name               ...............display the difference between the previous file nd updated file
+
+-----------------------------
+git reset HEAD file (staging to workspace)   ........reset from staging to workspace
+git reset --soft cid (local to staging)      ........reset from local to staging
+git reset --mixed cid (local to workspace)   ........reset from local to workspace
+
+git reset --hard cid (delete)                ........reset from 
+
+          
+git clone https://github.com/polarapu/batch65.git     .........To clone  from github to local repository and able to extract the files.
+cd batch65                         ............ change the directory into batch65
+touch file1               ...............create the new file with the name of file1
+ls                        ............... display the file list
+git status                ............... display the all files  status
+git add file1             ............... change the state  file from  workspace to staging/index
+git status                ............... display the status of the file(file in green color indicates to staging state)
+git commit -m "label" file1 ............. change state from staging to local repostory
+git status                ............... display the status of the files
+git log                   ............... display the logs of all files
+git push                  ............... push the files from local repostory to central repostory
+
+git pull --rebase         ...............
+git push --set-upstream origin main
+LOG
+------------------------------------
+{git log -5             .................it display the 
+ git log --oneline
+ git log --online -5
+ git log --author=priyatham
+ git log --author=priyatham -n
+ git log --author=priyatham --oneline
+ git log --author=priyatham --oneline -n

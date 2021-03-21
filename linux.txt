@@ -1,0 +1,52 @@
+LINUX COMMANDS:
+------------------------------------------------
+touch    filename       --------create the file
+  {  
+       touch file1             -----it create the single  file with name of file1
+       touch file2 file3 file4 -----it create the multiple files with the names of file2 file3 file4
+  }
+
+
+CAT     filename     ---------create, modify and display the files.   
+  {
+       cat >file1           -------to create the file with the name of file1            
+       cat file1            -------to display the file with content
+       cat >>file1          -------to add content in  the file
+       ctrl+d               ------- to exit from the content
+  }
+
+VI   filename   ---------create ,modify and disply the files.
+  {
+     vi file1       -------create the file and 
+     esc + i        -------the file change to insert mode
+     esc :w         -------to exit from insert mode
+       or
+     esc :q
+       or
+     esc :wq
+   }
+
+mkdir directoryname   ------------create the directory name
+cd directoryname     -------------enter into the directory
+cd ..                ------------- exit from the single directory
+cd ../..             ------------- exit from double directory
+cd                   -------------exit from whole directory
+
+rm
+{
+     rmdir /directoryname  --------delete only empty directory
+     rmdir /dir /dir       -------delete double empty directory at a time
+     rm -rf filename dir/  -------delete the file and directory at a time
+     rm filename           -------delete the file only
+     rm *                  -------delete the all files in the directory
+     rm -r file dir/       -------delete the file and that directory also
+     rm -r dir/  file      ------- "
+     rm -rf file1 file2    -------delete the multiple files with their names.
+     rm -rf dir/           -------delete the folder with include files in the directory.
+}
+
+
+
+
+
+
